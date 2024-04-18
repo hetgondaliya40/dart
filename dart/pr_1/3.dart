@@ -14,26 +14,26 @@ void main() {
   stdout.write("Enter your choice :- ");
   choice = int.parse(stdin.readLineSync()!);
 
-  List<int> demo = [1, 2, 3];
+  List<int> mylist = [1, 2, 3];
   switch (choice) {
     case 1:
-      demo.add(4);
-      print("$demo");
+      mylist.add(4);
+      print("$mylist");
       break;
 
     case 2:
-      demo.remove(1);
-      print("$demo");
+      mylist.remove(1);
+      print("$mylist");
       break;
 
     case 3:
-      demo.replaceRange(1, 3, [2, 3]);
-      print("$demo");
+      mylist.replaceRange(1, 3, [2, 3]);
+      print("$mylist");
       break;
 
     case 4:
-      demo.add(3);
-      print("$demo");
+      mylist.add(3);
+      print("$mylist");
       break;
     default:
       stdout.write("invlid choise...!!");
