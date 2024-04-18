@@ -8,14 +8,14 @@ NUMBER IS POSITIVE
 import 'dart:io';
 
 void main() {
-  int n;
+  int a;
 
-  print("ENTER ANY NUMBER");
-  n = int.parse(stdin.readLineSync()!);
+  print("Enter any number");
+  a = int.parse(stdin.readLineSync()!);
 
-  if (n > 0) {
-    print("NUMBER IS POSITIVE");
+  if (a > 0) {
+    print("Number is Positive");
   } else {
-    print("NUMBER IS NAGATIVE");
+    print("Number is Nagative");
   }
 }
