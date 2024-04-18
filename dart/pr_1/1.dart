@@ -1,21 +1,26 @@
 /*Write a Dart program to to print all negative elements in an array.
 
-ENTER ANY NUMBER
-2
-NUMBER IS POSITIVE
-
  */
 import 'dart:io';
 
 void main() {
-  int a;
+  List<int> allNum = [];
 
-  print("Enter any number");
-  a = int.parse(stdin.readLineSync()!);
+  print("Enter numbers (type 'exit' to exit): ");
+  String input;
 
-  if (a > 0) {
-    print("Number is Positive");
-  } else {
-    print("Number is Nagative");
+  do {
+    input = stdin.readLineSync()!;
+    if (input != 'exit') {
+      int number = int.parse(input);
+      allNum.add(number);
+    }
+  } while (input != 'exit');
+
+  print('\nNegative Elements in the Array:');
+  for (int i = 0; i < allNum.length; i++) {
+    if (allNum[i] < 0) {
+      print(allNum[i]);
+    }
   }
 }
