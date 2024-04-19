@@ -38,9 +38,9 @@ void main() {
           for (var j = 0; j < 3; j++) choice += a[i][j];
         }
 
-        print("\n========================");
+        print("\n");
         print("Sum of all elements : ${choice++}");
-        print("========================");
+        print("");
         break;
 
       case 2:
@@ -54,25 +54,24 @@ void main() {
           }
         }
 
-        print("\n==================");
+        print("\n");
         print("Sum of $r row : ${choice++}");
-        print("==================");
+        print("");
         break;
 
       case 3:
         choice = 0;
         stdout.write("\nEnter row : ");
-        int c = int.parse(stdin.readLineSync()!);
-
+  int x = int.parse(stdin.readLineSync()!);
         for (var i = 0; i < 3; i++) {
           for (var j = 0; j < 3; j++) {
-            if (j == c) choice += a[i][j];
+            if (j == x) choice += a[i][j];
           }
         }
 
-        print("\n=====================");
-        print("Sum of $c colloum : ${choice++}");
-        print("=====================");
+        print("\n");
+        print("Sum of $x colloum : ${choice++}");
+        print("");
         break;
 
       case 4:
@@ -82,9 +81,9 @@ void main() {
             if (i == j) choice += a[i][j];
           }
         }
-        print("\n===========================");
+        print("\n");
         print("Sum of diagonal element : ${choice++}");
-        print("===========================");
+        print("");
         break;
 
       case 5:
@@ -95,9 +94,9 @@ void main() {
           }
         }
 
-        print("\n==============================");
+        print("\n");
         print("Sum of antidiagonal element : ${choice++}");
-        print("==============================");
+        print("");
         break;
 
       case 0:
@@ -108,5 +107,6 @@ void main() {
         print("\n\nInvalid input !!");
         break;
     }
-  } while (choice != 0);
+  } while (choice != 0);
 }
+
